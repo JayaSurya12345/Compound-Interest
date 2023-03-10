@@ -324,7 +324,7 @@ export default function Home() {
             heading={'How does the Simple Interest calculator work?'}
             content={
             <>
-            It uses the following logic<br></br><br></br><div className=""><div><b>Compound interest formula = </b></div><div><img src="https://www.linkpicture.com/q/formula.png"></img></div></div><br></br><b>where: <br></br>P = Principal amount<br></br> R = Rate of interest <br></br>n = Compounding frequency per year <br></br>N = Total compounding frequency for the entire period calculated as (n x T); n being the compounding frequency per annum and T being the time period in a number of years. </b></>}
+            It uses the following logic<br></br><br></br><div className="flex items-center"><div><b>Compound interest formula = </b></div><div><img src="https://www.linkpicture.com/q/formula.png" width={"150px"}></img></div></div><br></br><b>where: <br></br>P = Principal amount<br></br> R = Rate of interest <br></br>n = Compounding frequency per year <br></br>N = Total compounding frequency for the entire period calculated as (n x T); n being the compounding frequency per annum and T being the time period in a number of years. </b></>}
           />
 
           <CollapsibleBox
