@@ -2,8 +2,7 @@ import styles from "@/styles/Input.module.css";
 
 export default function DropDownInput({ value, setValue }) {
   return (
-    <div className={styles.inputBox}>
-      <div className={" sm:flex  justify-between flex-warp "}>
+      <div className={" flex  justify-between flex-warp w-[39%] "}>
         <select
           value={value}
           onChange={(e) => {
@@ -18,7 +17,6 @@ export default function DropDownInput({ value, setValue }) {
           <option value="2">SemiAnnualy</option>
           <option value="12">Monthly</option>
         </select>
-      </div>
       </div>
   );
 }

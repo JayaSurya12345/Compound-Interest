@@ -160,7 +160,7 @@ export default function Home() {
 
                 <div className=" flex  justify-between flex-warp ">
                   {/*Compounding frequency block*/}
-                  <div >Compounding frequency</div>
+                  <div className="w-[58%]">Compounding frequency</div>
                   <DropDownInput value={compoundingFrequency} setValue={setcompoundingFrequency}/>
                 </div>
 
