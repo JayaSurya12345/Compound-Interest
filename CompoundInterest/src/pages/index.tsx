@@ -125,7 +125,7 @@ export default function Home() {
                     type='rupees'
                     min={1000}
                     max={10000000}
-                    step={1000}
+                    step={100}
                     value={totalInvestment}
                     setValue={settotalInvestment}
                   />
@@ -139,8 +139,8 @@ export default function Home() {
                     id='finalInvestment'
                     type='percentage'
                     min={1}
-                    max={20}
-                    step={0.01}
+                    max={50}
+                    step={0.1}
                     value={interestRate}
                     setValue={setinterestRate}
                   />
@@ -152,7 +152,8 @@ export default function Home() {
                   <Input
                     id='timePeriod'
                     min={1}
-                    max={40}
+                    max={30}
+                    step={1}
                     value={timePeriod}
                     setValue={settimePeriod}
                   />
