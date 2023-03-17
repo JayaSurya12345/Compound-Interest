@@ -16,9 +16,15 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/": ["./src/"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/index.js", "src/pages/_document.js", "src/pages/_app.js"],, , "src/pages/index.js", "src/pages/_document.js""src/pages/_app.js"
+  "include": [
+    "next-env.d.ts",
+    "*/.ts",
+    "*/.tsx",
+    "src/pages/cagr.js",
+    "src/pages/gratuity.js"
+  ],
   "exclude": ["node_modules"]
 }

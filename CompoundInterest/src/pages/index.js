@@ -10,6 +10,8 @@ import { FaChartPie, FaChartLine } from "react-icons/fa";
 import { MdOutlineShowChart } from "react-icons/md";
 import DropDownInput from "../Components/CIDropDownInput.js";
 
+import {VscCircleFilled} from "react-icons/vsc";
+
 export default function Home() {
   const [totalInvestment, settotalInvestment] = useState(100000.0);
   const [interestRate, setinterestRate] = useState(5);
@@ -295,11 +297,36 @@ export default function Home() {
             <div className={"font-bold "}>How to use this calculator?</div>
             <CollapsibleBox
               heading={'Compound Interest'}
-              content={'Compound interest is what happens when the interest you earn on savings begins to earn interest on itself'}
+              content={'Compound interest is a financial concept that refers to the interest on a loan or deposit calculated based on both the initial principal amount and the accumulated interest from previous periods.'}
             />
+            
             <CollapsibleBox
               heading={'Uses of Compound Interest calculation'}
-              content={'Compound interest causes your wealth to grow faster. It makes a sum of money grow at a faster rate than simple interest because you will earn returns on the money you invest, as well as on returns at the end of every compounding period'}
+          
+              content={ 
+              <>
+              Compound Interest is used in all these products which help you in the growth of your wealth
+              <ul>
+                <li className=" flex flex-row "><VscCircleFilled className=" text-[#00DD6F] mt-[2px] relative flex-shrink-0 "/>Safe Compounding Investments</li>
+                <ul>
+                <li className=" flex flex-row "><VscCircleFilled className=" text-[#00DD6F] ml-[15px] mt-[2px] relative flex-shrink-0 "/>Fixed Deposits</li>
+                <li className=" flex flex-row "><VscCircleFilled className=" text-[#00DD6F] ml-[15px] mt-[2px] relative flex-shrink-0"/>Public Provident Fund (PPF)</li>
+                <li className=" flex flex-row"><VscCircleFilled className=" text-[#00DD6F] ml-[15px] mt-[2px] relative flex-shrink-0"/>National Savings Scheme (NSC)</li>
+                <li className=" flex flex-row "><VscCircleFilled className=" text-[#00DD6F] ml-[15px] mt-[2px] relative flex-shrink-0 "/>Life Insurance Savings Plans</li>
+                <li className=" flex flex-row "><VscCircleFilled className=" text-[#00DD6F] ml-[15px] mt-[2px] relative flex-shrink-0"/>Debt Mutual Funds</li>
+                <li className=" flex flex-row"><VscCircleFilled className=" text-[#00DD6F]  ml-[15px] mt-[2px] relative flex-shrink-0"/>Unit Linked Insurance Plans (ULIPs) with Debt Fund investment</li>
+                </ul>
+                <li className=" flex flex-row "><VscCircleFilled className=" text-[#00DD6F] mt-[2px] relative flex-shrink-0"/>Aggressive Compounding Investments</li>
+                <ul>
+                <li className=" flex flex-row "><VscCircleFilled className=" text-[#00DD6F] ml-[15px] mt-[2px] relative flex-shrink-0 "/>Equity Mutual Funds</li>
+                <li className=" flex flex-row "><VscCircleFilled className=" text-[#00DD6F] ml-[15px] mt-[2px] relative flex-shrink-0"/>Equity-Linked Savings Scheme (ELSS)</li>
+                <li className=" flex flex-row"><VscCircleFilled className=" text-[#00DD6F] ml-[15px] mt-[2px] relative flex-shrink-0"/>National Pension System (NPS)</li>
+                <li className=" flex flex-row "><VscCircleFilled className=" text-[#00DD6F] ml-[15px] mt-[2px] relative flex-shrink-0 "/>Unit-Linked Insurance Plans (ULIPs) with Equity Fund investment</li>
+                
+                </ul>
+                
+              </ul>
+              </>}
             />
             
           </div>
@@ -313,7 +340,7 @@ export default function Home() {
         >
           <CollapsibleBox
             heading={'What is Compound Interest?'}
-            content={'Compound interest is a financial concept that refers to the interest on a loan or deposit calculated based on both the initial principal amount and the accumulated interest from previous periods. In other words, the interest earned in a given period is added to the principal, and the total balance is used as the basis for calculating the interest in the next period. This process continues over time, causing the balance to grow at an exponential rate.'}
+            content={'Compound interest is a financial concept that refers to the interest on a loan or deposit calculated based on both the initial principal amount and the accumulated interest from previous periods. In other words, the interest earned in a given period is added to the principal, and the total balance is used as the basis for calculating the interest in the next period. This process continues over time, causing the balance to grow at an exponential rate. '}
           />
 
           <CollapsibleBox
@@ -322,11 +349,88 @@ export default function Home() {
           />
 
           <CollapsibleBox
-            heading={'How does the Simple Interest calculator work?'}
-            content={
-            <>
-            It uses the following logic<br></br><br></br><div className="flex items-center"><div><b>Compound interest formula = </b></div><div><img src="https://www.linkpicture.com/q/formula.png" width={"150px"}></img></div></div><br></br><b>where: <br></br>P = Principal amount<br></br> R = Rate of interest <br></br>n = Compounding frequency per year <br></br>N = Total compounding frequency for the entire period calculated as (n x T); n being the compounding frequency per annum and T being the time period in a number of years. </b></>}
-          />
+
+             heading={'How does the Compound Interest calculator work?'}
+             content={
+              <>
+            <div className="mb-[10px]">It uses the following logic</div>
+
+            <div className={"font-semibold flex items-center "}>
+            <div>Compound interest formula = </div>
+            <div className="flex items-center">
+            <div className="flex h-[42px] w-[8px] text-[39px] font-light items-center">
+            [
+           </div>
+
+           <div className="flex items-center">
+            <div className="flex   mr-[8px] ml-[2px]   h-[20px] w-[6px] text-[15px] font-light items-center">
+                P
+            </div>
+
+            <div className="flex   mr-[6px] -ml-[6px]    h-[33px] w-[6px] text-[30px] font-light items-center">
+                {'{'}
+            </div>
+
+            <div className="flex   mr-[8px] ml-[2px]   h-[20px] w-[1px] text-[20px] font-light items-center">
+                1
+            </div>
+
+            <div className="flex   mr-[8px] ml-[1px]   h-[10px] w-[6px] text-[20px] font-light items-center">
+                +
+            </div>
+
+            <div className="flex   mr-[8px] ml-[2px]   h-[20px] w-[6px] text-[25px] font-light items-center">
+                (
+            </div>
+
+            <div className="flex-col  ">
+                <div className=" h-[20px] w-[17px] ">R</div>
+                <div className=" h-0 text-[50px] font-thin flex justify-center ml-[1px] pt-[1px]  items-center">
+                    -
+                </div>
+                <div className=" h-[20px] w-[19px] ">n</div>
+            </div>
+
+            <div className="flex   mr-[6px] -ml-[6px]    h-[33px] w-[10px] text-[30px] font-light items-center">
+                )
+            </div>
+
+            <div className="flex   mr-[6px] -ml-[6px]    h-[33px] w-[6px] text-[30px] font-light items-center">
+                {'}'}
+            </div>
+
+
+        </div>
+
+        <div className=" flex-col justify-center -mt-[28px] mr-[3px] ">
+            <div className=" text-[10px] h-[15px] flex justify-center">
+                N
+            </div>
+        </div>
+
+        <div className="flex h-[42px] w-[8px] -ml-[3px] text-[39px] font-light items-center">
+            ]
+        </div>
+
+       
+
+
+        </div>
+        <div className=" flex   mr-[8px] ml-[2px]   h-[20px] w-[6px] text-[25px] font-light items-center ">
+         <div className="flex   mr-[4px] ml-[6px]   h-[10px] w-[6px] text-[15px] font-light items-center">-</div>
+         <div className="flex   mr-[6px] ml-[1px]   h-[20px] w-[6px] text-[15px] font-light items-center">P</div>
+       </div>
+       </div>
+      <div className={"font-semibold"}>
+         <div>Where:</div>
+        <div>P = Principal amount</div>
+        <div>R = Rate of interest</div>
+        <div>n = Compounding frequency per year</div>
+        <div>N = Total compounding frequency for the entire period calculated as (n x T);n being the compounding frequency per annum and T being the time period in a number of years.</div>
+      </div>
+      </>}/>
+
+
 
           <CollapsibleBox
             heading={'Why should I use FundsIndia Compound Interest Calculator?'}
