@@ -1,4 +1,4 @@
-import styles from '@/styles/Input.module.css'
+import styles from '../styles/CIInput.module.scss'
 import { useState } from 'react';
 export default function Input({ id, type = '', min = 0, max, step = 1, value, setValue }) {
 

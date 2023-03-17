@@ -1,14 +1,14 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
-import Input from "../Components/Input.jsx";
-import LineChart from "../Components/LineChart.jsx";
-import DoughnutChart from "@/Components/DoughnutChart.jsx";
-import CollapsibleBox from "@/Components/CollapsibleBox.jsx";
-import RelatedCalculator from "@/Components/RelatedCalculator.jsx";
+import Input from "../Components/CIInput.js";
+import LineChart from "../Components/CILineChart.js";
+import DoughnutChart from "../Components/CIDoughnutChart.js";
+import CollapsibleBox from "../Components/CICollapsibleBox.js";
+import RelatedCalculator from "../Components/CIRelatedCalculator.js";
 import { FaChartPie, FaChartLine } from "react-icons/fa";
 import { MdOutlineShowChart } from "react-icons/md";
-import DropDownInput from "../Components/DropDownInput.jsx";
+import DropDownInput from "../Components/CIDropDownInput.js";
 
 export default function Home() {
   const [totalInvestment, settotalInvestment] = useState(100000.0);
